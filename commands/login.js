@@ -3,13 +3,12 @@ const config = require('../config.json');
 module.exports = {
   name: 'login',
   category: 'Utility',
-  description: 'login.',
+  description: 'Log into a minecraft server',
   usage: 'login',
   run: async(client, message, args) => {
 
 let ign = args[0]
 let server = args[1]
-
 
 if(!ign){
     return message.channel.send("**Usage:** \`.login <Username> <Server_IP>\`")
@@ -26,7 +25,7 @@ function createBot() {
    host: server,
    port: 25565,
    username: ign,
-   version: "1.8.9",
+   version: "1.8.9", //You can change the minecraft version here.
  
  })
 
