@@ -9,7 +9,7 @@ Fill in your bot token and the channel ID where the bot will be working in confi
 
 **How to use the bot?**
 
-It is a simple command ".login <Username> <Server_IP>"
+It is a simple command `.login <Username> <Server_IP>`
 
 **Why is the bot being slow sometimes?**
 
