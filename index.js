@@ -35,7 +35,7 @@ for (const file of commandFiles) {
 
 client.on('ready',() =>{
    console.log('This bot is online!');
-   client.user.setActivity(`Monitoring Clan Trophies!`, {type: "WATCHING"});
+   client.user.setActivity(`Minecraft!`, {type: "PLAYING"});  // You may change the bot's status here
    console.log("Powered by K4c3m")
 })
 
