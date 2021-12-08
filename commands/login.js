@@ -3,7 +3,7 @@ const config = require('../config.json');
 module.exports = {
   name: 'login',
   category: 'Utility',
-  description: 'Log into a minecraft server',
+  description: 'Log into a minecraft server', // Log into the best SERVER
   usage: 'login',
   run: async(client, message, args) => {
 
