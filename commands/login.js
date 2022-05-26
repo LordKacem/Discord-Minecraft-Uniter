@@ -31,13 +31,23 @@ function createBot() {
 
  const bChannel = client.channels.cache.get(config.bot_channel)
 
+      let chat = [];
+
+      setInterval(() => {
+        if (chat.length) {
+          bChannel.send("```" + chat.join("\n") + "```");
+          chat.length = 0;
+        } else {
+          return;
+        }
+      }, 1000);
 
 bot.on('chat', (username, message) => {
     
     if(username === "Limit" || "ago" || ign) return;    
     if(message = "") return;
 
-    bChannel.send(`\`${username}\` ➤ ${message}`)
+    chat.push(`\`${username}\` ➤ ${message}`);
     
   })
 
@@ -45,7 +55,7 @@ bot.on('chat', (username, message) => {
 
 if(!msg) return;
 if(msg.includes("You are currently disguised")) return;
-    bChannel.send(`[INFO]: ${msg}`)
+    chat.push(`${msg}`);
     
   })
 
