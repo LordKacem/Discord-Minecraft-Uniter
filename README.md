@@ -7,10 +7,15 @@ A discord bot allowing you to join cracked minecraft servers and access the chat
 
 Fill in your bot token and the channel ID where the bot will be working in config.json
 
+Once you have everything ready for the discord bot to launch you may use the command `node index.js` in your terminal to start the bot.
+
 **How to use the bot?**
 
 It is a simple command `.login <Username> <Server_IP>`
 
-**Why is the bot being slow sometimes?**
+~~**Why is the bot being slow sometimes?**~~ 
 
-Due to discord limitations, bots are only able to send 5 messages at once. Therefore if the chat is updating quickly it is hard for the bot to keep track of it at real-time.
+~~Due to discord limitations, bots are only able to send 5 messages at once. Therefore if the chat is updating quickly it is hard for the bot to keep track of it at real-time.~~ - This issue was solved in the latest update.
+
+
+
